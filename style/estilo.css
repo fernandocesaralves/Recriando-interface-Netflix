@@ -1,0 +1,171 @@
+:root{
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+@font-face{
+    font-family: "Bebas Neue";
+    src: url("../font/BebasNeue-Regular.woff");
+}
+
+@font-face{
+    font-family: "Tolyer Regular";
+    src: url("Tolyer-Regular-no.3.woff");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.botoes a{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;  
+}
+
+.usuario a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.fernando:hover{
+    color: var(--vermelho);
+}
+
+
+/* Elementos de Base */
+body{
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: #fff;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/* Filme Principal */
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url("../img/capa-house.jpg");
+    height: 400px;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    letter-spacing: 0.1rem;
+    font-size: 50px;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color:#fff;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    transition: .4s ease all;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.botao:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.botao:hover a{
+    color: #000;
+}
+
+/* Filmes Miniaturas */
+.continuar{
+    padding: 5px;;
+    height: 3em;
+    margin-top: 1em;
+}
+
+.continuar h3{
+    line-height: 3em;
+    color: #969696;
+    margin-left: 20px;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+/* Usuário */
+.avatar{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.usuario{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.usuario span{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.usuario .fa-caret-down{
+    margin-right: 30px;
+}
+
+.usuario .fa-bell{
+    font-size: 1.8em;
+    margin-right: 1.4rem;
+}
+
+.usuario .fa-search{
+    font-size: 1.2em;
+    margin-right: 1.4rem;
+}
+
+
